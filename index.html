@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>English words app</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <main class="main">
+                <div class="wrapper__toolbar toolbar">
+                    <button class="toolbar__words" data-name="words">
+                        words
+                    </button>
+                    <div class="toolbar__exercises exercises">
+                        <h2 class="exercises__title">Exercises</h2>
+                        <button
+                            class="exercises__true-of-false"
+                            data-name="true-or-false"
+                        >
+                            true or false
+                        </button>
+                        <button class="exercises__quiz" data-name="quiz">
+                            quiz
+                        </button>
+                    </div>
+                </div>
+                <div class="wrapper__show-content show-content">
+                    <div class="wrapper-content" data-name="words">
+                        <div class="wrapper__inputs inputs">
+                            <div class="inputs__item inputs__item_uk">
+                                <label for="ukrainian">Ukraine word</label>
+                                <input
+                                    type="text"
+                                    name="ukrainian"
+                                    class="wrapper__input_uk"
+                                />
+                            </div>
+                            <div class="inputs__item inputs__item_en">
+                                <label for="english">English word</label>
+                                <input
+                                    type="text"
+                                    name="english"
+                                    class="wrapper__input_en"
+                                />
+                            </div>
+                        </div>
+                        <div class="wrapper__button button-wrapper">
+                            <button class="button-wrapper__button">
+                                ADD WORD PAIR
+                            </button>
+                            <div class="wrapper__items">
+                                <h2 class="wrapper__title">Show words</h2>
+                                <div class="wrapper__item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="show-content__true-or-false true-or-false-content"
+                        data-name="true-or-false"
+                    >
+                        <div class="content">
+                            <p class="trueOfFalse__current-question"></p>
+                            <div class="true-or-false-content__item">hi</div>
+                            <div class="true-or-false-content__buttons">
+                                <button
+                                    class="true-or-false-content__button true"
+                                >
+                                    TRUE
+                                </button>
+                                <button
+                                    class="true-or-false-content__button false"
+                                >
+                                    FALSE
+                                </button>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <p class="result__score"></p>
+                            <button class="restart">restart</button>
+                        </div>
+                    </div>
+                    <div class="quiz" data-name="quiz">quiz</div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+        <script type="module" src="script.js"></script>
+        <script type="module" src="trueOfFalse.js"></script>
+    </body>
+</html>
